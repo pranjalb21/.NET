@@ -15,6 +15,8 @@ namespace ConsoleApp1
             Console.WriteLine("Hello " + name + " welcome.\nNow please confirm your age to continue...");
             String age = Console.ReadLine();
             Console.WriteLine("Thanks for your information.\nYour name is " + name + " and your age is " + Convert.ToInt32(age));
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a);
             Console.ReadLine();
         }
     }
