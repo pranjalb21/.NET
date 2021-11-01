@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="container">
+    <input type="button" name="name" value="Click Here" class="btn btn-outline-danger" />
+
+    @{string gmail = "abc";}
+    <h1>Book store @(1234) pranjalgain052@gmail.com @gmail</h1>
+    @for (int i = 0; i < 5; i++)
+    {
+        <h1>The value of I is @i</h1>
+    }
+    @{var li = new List<int>() { 1, 2, 3, 4, 5, 6 };}
+    <img src="~/images/logo.jpeg" alt="image" class="logo"/>
+
+    @foreach (var item in li)
+    {
+        <h1>@item</h1>
+    }
+</body>
+</html>

@@ -1,0 +1,16 @@
+﻿body {
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px 0 black;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: 0.9;
+}
+
+    .logo:hover {
+        opacity: 1;
+    }
