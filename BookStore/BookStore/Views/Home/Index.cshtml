@@ -1,32 +1,66 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "_layout";
 }
 
-<!DOCTYPE html>
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1>Welcome to Bookstore</h1>
+        <p class="lead text-muted">
+            Presented by Pranjal Gain
+        </p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">Search book</a>
+        </p>
+    </div>
+</section>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <link href="~/css/StyleSheet.css" rel="stylesheet" />
-    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
-</head>
-<body class="container">
-    <input type="button" name="name" value="Click Here" class="btn btn-outline-danger" />
-
-    @{string gmail = "abc";}
-    <h1>Book store @(1234) pranjalgain052@gmail.com @gmail</h1>
-    @for (int i = 0; i < 5; i++)
-    {
-        <h1>The value of I is @i</h1>
-    }
-    @{var li = new List<int>() { 1, 2, 3, 4, 5, 6 };}
-    <img src="~/images/logo.jpeg" alt="image" class="logo"/>
-
-    @foreach (var item in li)
-    {
-        <h1>@item</h1>
-    }
-</body>
-</html>
+<div class="py-5 bg-light">
+    <div class="container">
+        <h3 class="h3">Top books</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" src="~/images/logo.jpeg" />
+                    <div class="card-body">
+                        <p class="card-text">Desc</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View content</a>
+                            </div>
+                            <small class="text-muted">Author name</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" src="~/images/logo.jpeg" />
+                    <div class="card-body">
+                        <p class="card-text">Desc</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View content</a>
+                            </div>
+                            <small class="text-muted">Author name</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img class="bd-placeholder-img card-img-top" src="~/images/logo.jpeg" />
+                    <div class="card-body">
+                        <p class="card-text">Desc</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-secondary">View content</a>
+                            </div>
+                            <small class="text-muted">Author name</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

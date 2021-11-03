@@ -12,5 +12,14 @@ namespace BookStore.Controllers
         {
             return View();
         }
+
+        public ViewResult About()
+        {
+            return View();
+        }
+        public ViewResult Contact()
+        {
+            return View();
+        }
     }
 }
