@@ -1,0 +1,80 @@
+﻿
+@model BookModel;
+@{
+    ViewData["Title"] = ViewBag.book.Title + " - Book";
+}
+<div class="container">
+    <h3>Book Details</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="@ViewBag.book.Source" class="d-block h-100 w-50" alt="..." asp-append-version="true">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>@ViewBag.book.Title</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-primary">
+                    <span class="label label-primary">By:&nbsp;</span>
+                    <span class="font-monospace">@ViewBag.book.Author</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-dark">@ViewBag.book.Description</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="btn btn-outline-primary">
+                        Read now
+                    </button>
+                </div>
+            </div>
+
+            <hr />
+
+            <ul class="list-group">
+                <li class="list-group-item"><span class="text-dark">Category - </span> @ViewBag.book.Category</li>
+                <li class="list-group-item"><span class="text-dark">Total pages - </span> @ViewBag.book.Pages</li>
+                <li class="list-group-item"><span class="text-dark">Language - </span> @ViewBag.book.Language</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr />
+    <div class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h2">Similar books</h2>
+            <div class="row">
+                @for (int i = 0; i < 3; i++)
+                {
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="bd-placeholder-img card-img-top" src="~/images/logo.jpeg" asp-append-version="true" />
+                            <div class="card-body">
+                                <p class="card-text">Desc</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View content</a>
+                                    </div>
+                                    <small class="text-muted">Author name</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

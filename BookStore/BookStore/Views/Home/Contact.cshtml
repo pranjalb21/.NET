@@ -1,7 +1,7 @@
-﻿
-@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@{
+    ViewData["Title"] = "Contact";
+    dynamic data = ViewBag.Data;
 }
-
-<h1>Contact</h1>
+<h1>Contact is: @ViewBag.Mobile</h1>
+<h2>@data.id: @data.num</h2>
 

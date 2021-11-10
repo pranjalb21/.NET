@@ -24,11 +24,11 @@ namespace BookStore.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel() { Id = 1, Title = "Book1", Author = "Author1" },
-                new BookModel() { Id = 2, Title = "Book2", Author = "Author2" },
-                new BookModel() { Id = 3, Title = "Book3", Author = "Author3" },
-                new BookModel() { Id = 4, Title = "Book4", Author = "Author4" },
-                new BookModel() { Id = 5, Title = "Book5", Author = "Author5" },
+                new BookModel() { Id = 1, Title = "Vivekadeepini", Author = "Adi Shankaracharya", Description = "This is a book by Adi Shankaracharya", Source = "/images/Book_1.jpg", Category = "Life Style", Language = "Tamil", Pages = 1046 },
+                new BookModel() { Id = 2, Title = "ABSALOM, ABSALOM!", Author = "WILLIAM FAULKNER", Description = "This quotation for Faulkner’s 1936 novel comes from the Books of Samuel.", Source = "/images/Book_2.jpg", Category = "Novel", Language = "English", Pages = 996 },
+                new BookModel() { Id = 3, Title = "A TIME TO KILL", Author = "JOHN GRISHAM", Description = "This one is from 3:3 in the Ecclesiastes, again part of the Old Testament.", Source = "/images/Book_3.jpg", Category = "Historic", Language = "Sanskrit", Pages = 2046 },
+                new BookModel() { Id = 4, Title = " THE HOUSE OF MIRTH", Author = "EDITH WHARTON",Description = "One of Wharton’s best-known novels, it came out in 1905.", Source = "/images/Book_4.jpg", Category = "Historic", Language = "English", Pages = 1001  },
+                new BookModel() { Id = 5, Title = " EAST OF EDEN", Author = "JOHN STEINBECK", Description = "Steinbeck apparently considered this 1952 novel to be his magnum opus.", Source = "/images/Book_5.jpg", Category = "Fantasy", Language = "Hindi", Pages = 3001 },
             };
         }
     }
